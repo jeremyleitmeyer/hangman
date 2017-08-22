@@ -1,0 +1,47 @@
+body {
+	background-color: aliceblue;
+}
+
+#fixbtn {
+	border-radius: 0; !important
+}
+
+.answer {
+	height: 45px;
+}
+
+#letters {
+	margin: 20px;
+	text-align: center;
+}
+
+#hint {
+	margin-top: 45px;
+	text-align: center;
+}
+
+.btn {
+	margin: 5px;
+	width: 76px;
+}
+
+.btn:focus	{
+	outline: none;
+}
+
+#left-box {
+	text-align: center;
+}
+
+.wrong {
+	height: 40px;
+}
+
+#letters {
+	margin-left: 50px;
+}
+
+
+footer {
+	position:fixed;bottom:0;left:0;right:0;height:35px;
+}

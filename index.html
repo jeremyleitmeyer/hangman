@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Hangman
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <center><img src="untitled.svg"></center>
+      <hr>
+    </div>
+    <div id="left-box" class="col-md-5">
+      <h4 class="attempts"></h4>
+      <h1 class="answer"></h1>
+      <h5>Used letters</h5>
+      <h3 class="wrong"></h3>
+    </div>
+    <div class="col-md-7">
+      <h1 id="hint"></h1>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="letters" class="btn-group" role="group">
+        <button onclick="guessLetter('A')" type="button" id="fixbtn" class="btn btn-info">A</button>
+        <button onclick=" guessLetter('B')" type="button" class="btn btn-info">B</button>
+        <button onclick="guessLetter('C')" type="button" class="btn btn-info">C</button>
+        <button onclick="guessLetter('D')" type="button" class="btn btn-info">D</button>
+        <button onclick="guessLetter('E')" type="button" class="btn btn-info">E</button>
+        <button onclick="guessLetter('F')" type="button" class="btn btn-info">F</button>
+        <button onclick="guessLetter('G')" type="button" class="btn btn-info">G</button>
+        <button onclick="guessLetter('H')" type="button" class="btn btn-info">H</button>
+        <button onclick="guessLetter('I')" type="button" class="btn btn-info">I</button>
+        <button onclick="guessLetter('J')" type="button" class="btn btn-info">J</button>
+        <button onclick="guessLetter('K')" type="button" class="btn btn-info">K</button>
+        <button onclick="guessLetter('L')" type="button" class="btn btn-info">L</button>
+        <button onclick="guessLetter('M')" type="button" class="btn btn-info">M</button>
+        <button onclick="guessLetter('N')" type="button" class="btn btn-info">N</button>
+        <button onclick="guessLetter('O')" type="button" class="btn btn-info">O</button>
+        <button onclick="guessLetter('P')" type="button" class="btn btn-info">P</button>
+        <button onclick="guessLetter('Q')" type="button" class="btn btn-info">Q</button>
+        <button onclick="guessLetter('R')" type="button" class="btn btn-info">R</button>
+        <button onclick="guessLetter('S')" type="button" class="btn btn-info">S</button>
+        <button onclick="guessLetter('T')" type="button" class="btn btn-info">T</button>
+        <button onclick="guessLetter('U')" type="button" class="btn btn-info">U</button>
+        <button onclick="guessLetter('V')" type="button" class="btn btn-info">V</button>
+        <button onclick="guessLetter('W')" type="button" class="btn btn-info">W</button>
+        <button onclick="guessLetter('X')" type="button" class="btn btn-info">X</button>
+        <button onclick="guessLetter('Y')" type="button" class="btn btn-info">Y</button>
+        <button onclick="guessLetter('Z')" type="button" id="fixbtn" class="btn btn-info">Z</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <h6 class="by">Created by: Jeremy Leitmeyer</h6>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
