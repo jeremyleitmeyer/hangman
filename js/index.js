@@ -103,15 +103,24 @@ function guessLetter(letter) {
   var splitWordFinal = splitWord.toString();
   var solutionFinal = solution.toString();
 
-  setTimeout(function() {
-    if (solutionFinal === splitWordFinal && !alert("Congrats! You win!")) {
-      window.location.reload();
+  // setTimeout(function() {
+    if (solutionFinal === splitWordFinal) {
+    	console.log("win")
+      document.querySelector("#winModal").classList.remove("hidden")
     }
-    if (attemptsLeft === 0 && !alert("Sorry! You lose!")) {
-      window.location.reload();
+    if (attemptsLeft === 0) {
+    	console.log("lose")
+      document.querySelector("#loseModal").classList.remove("hidden")
     }
-  }, 500);
+  // }, 500);
 }
+
+function playAgain() {
+  document.querySelector("#winModal").classList.add("hidden")
+  document.querySelector("#loseModal").classList.remove("hidden")
+	window.location.reload();
+}
+
 
 window.onload = btnPress();
 window.onload = guessLetter();
