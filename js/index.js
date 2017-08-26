@@ -117,7 +117,7 @@ function guessLetter(letter) {
 
 function playAgain() {
   document.querySelector("#winModal").classList.add("hidden")
-  document.querySelector("#loseModal").classList.remove("hidden")
+  document.querySelector("#loseModal").classList.add("hidden")
 	window.location.reload();
 }
 
